@@ -3,7 +3,7 @@ source ~/.config/nvim/plugins.vim
 
 " color scheme
 "################################################################################
-colorscheme molokai
+colorscheme PaperColor
 
 " syntax highlighting
 syntax enable
