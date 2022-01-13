@@ -6,11 +6,13 @@ source ~/.config/nvim/plugins.vim
 colorscheme PaperColor
 
 " syntax highlighting
+"################################################################################
 syntax enable
 
 " leader key
 "################################################################################
-:let mapleader = ","        " remap leader key from \ to ,
+" default leader key is \
+" remapping to , brouhgt slight problems in handling of , funtionality
 
 " moving text
 "################################################################################
@@ -110,4 +112,28 @@ set undodir=~/.vim/.undo/,~/tmp,/tmp
 
 " swap files
 set directory=~/.vim/.tmp.~/tmp,/tmp
+
+" netrw
+"################################################################################
+nnoremap <leader>e :e .<CR>
+nnoremap <leader>ev :Vexplore<CR>
+nnoremap <leader>eh :Sexplore<CR>
+"disable banner
+let g:netrw_banner = 0
+"open new file in vertical split
+"let g:netrw_browse_split = 2
+
+" vim-gitgutter
+"################################################################################
+" turn off with :GitGutterDisable
+" turn on with :GitGutterEnable
+" turn off with in buffer :GitGutterBufferDisable
+" turn on with in buffer :GitGutterBufferEnable
+set updatetime=100
+
+" telescope
+"################################################################################
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
 

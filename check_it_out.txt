@@ -1,0 +1,13 @@
+plugins:
+--------
+ctrl-p
+fzf
+nerdtree
+nertdree-git-plugin
+vim-fugitive
+welle/context.vim
+
+golang language server
+coc plugin
+gopls
+

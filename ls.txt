@@ -1,0 +1,6 @@
+todos:
+------
+install gopls  -> golang language server
+checkout https://github.com/neovim/nvim-lspconfig -> repo to get you started
+
+
